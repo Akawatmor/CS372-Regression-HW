@@ -1,0 +1,39 @@
+Regression : ทำนายพื้นที่ไฟไหม้ป่า (Forest Fires)
+
+Attribute Information:
+1.	X - x-axis spatial coordinate within the Montesinho park map: 1 to 9 
+ลองจิจูด ระยะตามแนวแกน x
+2.	Y - y-axis spatial coordinate within the Montesinho park map: 2 to 9 
+ละติจูด ระยะตามแนวแกน y
+3.	month - month of the year: 'jan' to 'dec' 
+4.	day - day of the week: 'mon' to 'sun' 
+5.	FFMC - FFMC index from the FWI system: 18.7 to 96.20 
+FFMC ปริมาณความชื้นพื้นผิวดิน มีอิทธิพลต่อการแพร่กระจายของไฟป่า
+6.	DMC - DMC index from the FWI system: 1.1 to 291.3 
+DMC ปริมาณความแห้งแล้งของสารอินทรีย์ในดิน ส่งผลต่อความรุนแรงของไฟ
+7.	DC - DC index from the FWI system: 7.9 to 860.6 
+DC ระดับความชื้นของพื้นดิน
+8.	ISI - ISI index from the FWI system: 0.0 to 56.10 
+ISI ความเร็วในการแพร่กระจายของไฟ
+9.	temp - temperature in Celsius degrees: 2.2 to 33.30 
+10.	RH - relative humidity in %: 15.0 to 100 
+11.	wind - wind speed in km/h: 0.40 to 9.40 
+12.	rain - outside rain in mm/m2 : 0.0 to 6.4 
+13.	area - the burned area of the forest (in ha): 0.00 to 1090.84 
+
+The forest Fire Weather Index (FWI) is the Canadian system for rating fire danger and it includes components: Fine Fuel Moisture Code (FFMC), Duff Moisture Code (DMC), Drought Code (DC), Initial Spread Index (ISI), Buildup Index (BUI).
+
+จงตอบคำถามต่อไปนี้
+1)	แสดงสมการถดถอยเชิงเส้นที่ได้
+2)	วิเคราะห์สมการถดถอยเชิงเส้นที่ได้
+a.	Attribute ที่มีผลต่อไฟป่าน้อย (ขนาดสัมประสิทธิ์น้อยกว่า 1 ใน 100, |x|<0.01)
+b.	Attribute ที่เป็นตัวเลือก (Optional)
+c.	Attribute ที่ทำให้ไฟป่ากระจายตัวเพิ่มขึ้น
+d.	Attribute ที่ทำให้ไฟป่ากระจายตัวลดลง
+3)	ละติจูด ระยะตามแนวแกน y และ ลองจิจูด ระยะตามแนวแกน x ส่งผลต่อไฟไหม้ป่าอย่างไร
+4)	ค่า DMC และ DC ส่งผลต่อไฟป่าอย่างไร
+5)	ค่า temp ส่งผลต่อไฟป่าอย่างไร
+6)	พื้นที่ไฟป่าโดยประมาณจาก Input Attributes (Predictors) ด้านล่าง คือ เท่าใด
+
+X	Y	month	day	FFMC	DMC	DC	ISI	temp	RH	wind	rain	area
+6	3	nov	tue	79.5	3	106.7	1.1	11.8	31	4.5	0	?
